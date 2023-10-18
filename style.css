@@ -1,0 +1,96 @@
+
+.flex  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container {
+    background-color: black;
+    flex-direction: column;
+    padding: 20px;
+    width: 88vw;
+    max-width: 1000px;
+    height: auto;
+    border: 1px solid gray;
+}
+
+.box-cartaz {
+    height: 400px;
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.box-content {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    width: 100%;
+}
+
+.box-title {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.box-info, .box-botton {
+    justify-content: flex-start;
+    margin-top: -20px;
+    width: 100%;
+    gap: 30px;
+}
+
+.box-botton {
+    margin: 0;
+    gap: 10px;
+}
+
+.title, .text-info {
+    font: bolder 2em 'Arial', sans-serif;
+    color: white
+}
+
+.text-info {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+.btn {
+    height: 50px;
+    width: 35%;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to left, rgb(105, 0, 105), rgb(138, 3, 138));
+    box-shadow: 1px 1px 1px 1px black;
+    color: white;
+    transform: scale(.95);
+}
+
+.btn:hover {
+    transform: scale(1);
+}
+
+.btn-favorite {
+    background-image: linear-gradient(to left, rgb(236, 236, 236), white);
+    color: rgb(152, 2, 152);
+    width: 50px;
+}
+
+@media (min-width: 800px) 
+{
+    .container {
+        flex-direction: row;
+        justify-content: stretch;
+    }
+
+    .box-cartaz, .box-content {
+       width: 50%;
+       height: 400px;
+    }
+}
+
+
+
