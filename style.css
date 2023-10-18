@@ -15,6 +15,7 @@
     height: auto;
     border: 1px solid gray;
     border-radius: 15px;
+    gap: 0;
 }
 
 .box-cartaz {
@@ -85,6 +86,7 @@
     .container {
         flex-direction: row;
         justify-content: stretch;
+        gap: 10px;
     }
 
     .box-cartaz, .box-content {
