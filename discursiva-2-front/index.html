@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body, .container, .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body, .container {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .btn {
+            background-color: green;
+            font: normal 1.1rem 'Arial', sans-serif;
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            padding: 5px;
+            box-shadow: 1px 1px 0px .5px rgba(0, 0, 0, 0.415);
+            height: 60px;
+            width: 200px;
+        }
+
+        .fundo {
+            background-image: linear-gradient(to top, blue, yellow, red);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn">
+            <span>
+                Alterar fundo
+            </span>
+        </button>
+    </div>
+    <script>
+        const fundo = document.querySelector(".container")
+        const btn = document.querySelector(".btn")
+        btn.addEventListener("click", () => {
+            fundo.classList.toggle("fundo")
+        })
+    </script>
+</body>
+</html>
