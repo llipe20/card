@@ -74,5 +74,133 @@
             </div>
         </div>
     </div>
+    <script>
+        async function mahoraga() {
+            const data = 
+                {
+                    "pedido_id": "1",
+                    "user":"1",
+                    "pedido_valor": 75,
+                    "pedido_pagamento": "debito",
+                    "pedido_situacao": "Finalizado",
+                    "pedido_obs": "",
+                    "pedido_delivery": true,
+                    "cliente_id": "",
+                    "cliente_nome": "Mahoraga",
+                    "cliente_email": "fs2284511@mail.com",
+                    "cliente_fone": "(99) 98447-0567",
+                    "cliente_rua": "Vinte e um de abril",
+                    "cliente_bairro": "Volta Redonda",
+                    "cliente_casa": "1279",
+                    "cliente_referencia": "Prox a escoila",
+                    "produtos": [
+                        {
+                            "produto_id": "1",
+                            "produto_nome": "A\u00e7ai 200ml",
+                            "produto_tipo": "A\u00e7ais",
+                            "quantidade_produto": "1",
+                            "produto_imagem": "null",
+                            "produto_valor": "12.00"
+                        },
+                        {
+                            "produto_id": "1",
+                            "produto_nome": "A\u00e7ai 200ml",
+                            "produto_tipo": "A\u00e7ais",
+                            "quantidade_produto": "1",
+                            "produto_imagem": "null",
+                            "produto_valor": "12.00"
+                        },
+                        {
+                            "produto_id": "2",
+                            "produto_nome": "A\u00e7ai 350ml",
+                            "produto_tipo": "A\u00e7ais",
+                            "quantidade_produto": "2",
+                            "produto_imagem": "null",
+                            "produto_valor": "15.00"
+                        },
+                        {
+                            "produto_id": "2",
+                            "produto_nome": "Açai 350ml",
+                            "produto_tipo": "Açais",
+                            "quantidade_produto": "2",
+                            "produto_imagem": "null",
+                            "produto_valor": "15.00"
+                        },
+                        {
+                            "produto_id": "3",
+                            "produto_nome": "A\u00e7ai 500ml",
+                            "produto_tipo": "A\u00e7ais",
+                            "quantidade_produto": "2",
+                            "produto_imagem": "null",
+                            "produto_valor": "20.00"
+                        },
+                        {
+                            "produto_id": "3",
+                            "produto_nome": "A\u00e7ai 500ml",
+                            "produto_tipo": "A\u00e7ais",
+                            "quantidade_produto": "2",
+                            "produto_imagem": "null",
+                            "produto_valor": "20.00"
+                        }
+                    ],
+                    "adicionais": [
+                        {
+                            "adicional_id": "1",
+                            "adicional_nome": "chocolate",
+                            "adicional_tipo": "A\u00e7ais",
+                            "quantidade_adicional": "1",
+                            "adicional_imagem": "null",
+                            "adicional_valor": "2.00"
+                        },
+                        {
+                            "adicional_id": "2",
+                            "adicional_nome": "banana",
+                            "adicional_tipo": "A\u00e7ais",
+                            "quantidade_adicional": "2",
+                            "adicional_imagem": "null",
+                            "adicional_valor": "2.00"
+                        },
+                        {
+                            "adicional_id": "1",
+                            "adicional_nome": "chocolate",
+                            "adicional_tipo": "A\u00e7ais",
+                            "quantidade_adicional": "1",
+                            "adicional_imagem": "null",
+                            "adicional_valor": "2.00"
+                        },
+                        {
+                            "adicional_id": "2",
+                            "adicional_nome": "banana",
+                            "adicional_tipo": "A\u00e7ais",
+                            "quantidade_adicional": "2",
+                            "adicional_imagem": "null",
+                            "adicional_valor": "2.00"
+                        },
+                        {
+                            "adicional_id": "1",
+                            "adicional_nome": "chocolate",
+                            "adicional_tipo": "A\u00e7ais",
+                            "quantidade_adicional": "1",
+                            "adicional_imagem": "null",
+                            "adicional_valor": "2.00"
+                        }
+                    ]
+                }
+
+                const url = 'http://localhost/api/routers/pedidos.php'
+
+                req = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+
+            console.log(req)
+    }
+
+    mahoraga()
+    </script>
 </body>
 </html>
